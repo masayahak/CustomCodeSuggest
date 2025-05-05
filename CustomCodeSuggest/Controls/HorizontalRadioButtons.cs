@@ -2,7 +2,7 @@
 
 namespace CustomCodeSuggest.Controls
 {
-    public partial class HorizontalRadioButtons : UserControl
+    public class HorizontalRadioButtons : UserControl
     {
         private readonly FlowLayoutPanel flowPanel = new FlowLayoutPanel();
         private readonly List<(string Key, RadioButton Radio)> radioButtons = new List<(string, RadioButton)>();
@@ -89,8 +89,6 @@ namespace CustomCodeSuggest.Controls
         // -------------------------------------------------------
         public HorizontalRadioButtons()
         {
-            InitializeComponent();
-
             flowPanel.Dock = DockStyle.Fill;
             flowPanel.FlowDirection = FlowDirection.LeftToRight;
             flowPanel.WrapContents = false;

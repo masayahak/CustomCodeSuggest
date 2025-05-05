@@ -6,11 +6,10 @@
     // 例）”あいうえお”と入力すると、TextChangedイベントでTextBox.Textは”あ”になる。
     // それは困るので"あいうえお"を取得できるようにする。
     // -------------------------------------------------------
-    public partial class ImeTextBox : TextBox
+    public class ImeTextBox : TextBox
     {
         public ImeTextBox()
         {
-            InitializeComponent();
         }
 
         protected override void OnPaint(PaintEventArgs pe)

@@ -12,7 +12,7 @@ namespace CustomCodeSuggest.Controls
         public override string ToString() => $"{ID} {名称}";
     }
 
-    public partial class ImeSuggestTextBox : UserControl
+    public class ImeSuggestTextBox : UserControl
     {
         // プレースホルダー用 Win32 API
         private const int EM_SETCUEBANNER = 0x1501;
@@ -86,8 +86,6 @@ namespace CustomCodeSuggest.Controls
         // -------------------------------------------------------
         public ImeSuggestTextBox()
         {
-            InitializeComponent();
-
             _textBox = new ImeTextBox
             {
                 Location = new Point(0, 0),

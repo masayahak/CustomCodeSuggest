@@ -82,6 +82,7 @@ namespace CustomCodeSuggest
             SuggestTextBox得意先.Size = new Size(217, 43);
             SuggestTextBox得意先.TabIndex = 3;
             SuggestTextBox得意先.TextWidth = 147;
+            SuggestTextBox得意先.最大表示件数 = 20;
             // 
             // label3
             // 
@@ -191,7 +192,8 @@ namespace CustomCodeSuggest
             CodeSuggestTextBox得意先.Location = new Point(132, 74);
             CodeSuggestTextBox得意先.Name = "CodeSuggestTextBox得意先";
             CodeSuggestTextBox得意先.Size = new Size(342, 21);
-            CodeSuggestTextBox得意先.TabIndex = 20;
+            CodeSuggestTextBox得意先.TabIndex = 4;
+            CodeSuggestTextBox得意先.最大表示件数 = 20;
             // 
             // Form1
             // 

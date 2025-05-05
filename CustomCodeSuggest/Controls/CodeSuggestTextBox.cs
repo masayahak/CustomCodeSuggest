@@ -11,9 +11,9 @@ namespace CustomCodeSuggest.Controls
         public override string ToString() => $"{コード} {名称}";
     }
 
-    public partial class CodeSuggestTextBox : UserControl
+    public class CodeSuggestTextBox : UserControl
     {
-        private readonly TextBox _textCode;
+        private readonly NumericTextBox _textCode;
         private readonly TextBox _textName;
 
         // 選択する一覧（リストボックス）は親フォームに追加する
@@ -71,9 +71,7 @@ namespace CustomCodeSuggest.Controls
         // -------------------------------------------------------
         public CodeSuggestTextBox()
         {
-            InitializeComponent();
-
-            _textCode = new ImeTextBox
+            _textCode = new NumericTextBox
             {
                 Location = new Point(0, 0),
                 Anchor = AnchorStyles.Top | AnchorStyles.Left,
